@@ -27,3 +27,10 @@ summary(filtered)
 # We have data about `r nrow(mydata)` countries. Only 
 # `r nrow(mydata) - nrow(filtered)` have a population share greater than 1.0. The distribution of this is shown below:
 
+# Create a histogram of population_share with a fill color
+ggplot(filtered, aes(x = population_share)) +
+  geom_histogram(binwidth = 0.1, fill = "orange") +
+  labs(title = "Distribution of Population Share",
+       x = "Population Share")
+
+
