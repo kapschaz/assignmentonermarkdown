@@ -32,4 +32,10 @@ ggplot(filtered, aes(x = population_share)) +
   labs(title = "Distribution of Population Share",
        x = "Population Share")
 
+ggplot(filtered, aes(x = gdp_weighted_share)) +
+  geom_density(fill = "green") +
+  labs(title = "Distribution of GDP Weighted Share",
+       x = "GDP Weighted Share")
+
+
 
