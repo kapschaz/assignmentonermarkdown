@@ -24,4 +24,6 @@ filtered <- mydata %>%
 
 summary(filtered)
 
+# We have data about `r nrow(mydata)` countries. Only 
+# `r nrow(mydata) - nrow(filtered)` have a population share greater than 1.0. The distribution of this is shown below:
 
