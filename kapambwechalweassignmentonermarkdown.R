@@ -22,3 +22,6 @@ mydata <- read_csv(url)
 filtered <- mydata %>% 
   filter(population_share <= 1.0)
 
+summary(filtered)
+
+
