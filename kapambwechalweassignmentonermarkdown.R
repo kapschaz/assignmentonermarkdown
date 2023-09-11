@@ -19,3 +19,6 @@ library(ggplot2)
 url <- "https://raw.githubusercontent.com/fivethirtyeight/data/master/fifa/fifa_countries_audience.csv"
 mydata <- read_csv(url) 
 
+filtered <- mydata %>% 
+  filter(population_share <= 1.0)
+
