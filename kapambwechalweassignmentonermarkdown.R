@@ -9,3 +9,8 @@ output:
 ---
   
   ```{r, echo = FALSE}
+
+library(tidyverse)  
+library(knitr)      
+library(bslib)     
+library(ggplot2)  
